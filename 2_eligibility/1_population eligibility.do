@@ -53,7 +53,7 @@
 
 * Do file that cleans the HES data and distinguishes miscarriage/termination outcomes
 
-	do "$Dodir\2_cleaning\2a_cleaning hes data.do"
+	do "$Dodir\2_cleaning\1a_cleaning hes data.do"
 	
 ********************************************************************************
 
@@ -350,7 +350,7 @@ Delivery based on a late pregnancy reco |     27,001        0.36       84.79
 
 * Run the pregnancy conflicts algorithm - Jenny Campbell
 
-	do "$Dodir\2_eligibility\2b_pregreg conflicts.do"
+	do "$Dodir\2_eligibility\1b_pregreg conflicts.do"
 	
 ********************************************************************************
 
@@ -396,7 +396,7 @@ Delivery based on a late pregnancy reco |     27,001        0.36       84.79
 
 * Run algorithm to exclude episodes which are likely to be derived from historical data
 
-	do "$Dodir\2_eligibility\2c_pregreg_historical_episodes_exclude.do"
+	do "$Dodir\2_eligibility\1c_pregreg_historical_episodes_exclude.do"
 	
 ********************************************************************************
 
@@ -511,8 +511,8 @@ Delivery based on a late pregnancy reco |      6,658        0.10       89.49
 	
 * Now, using the new pregnumber variable we can derive gravidity and parity before the other exclusions are made so we take into consideration all pregnancies (excluded and included in the final cohort)
 
-	do "$Dodir\2_eligibility\2d_gravidity_pre_exc.do"
-	do "$Dodir\2_eligibility\2e_parity_pre_exc.do"
+	do "$Dodir\2_eligibility\1d_gravidity_pre_exc.do"
+	do "$Dodir\2_eligibility\1e_parity_pre_exc.do"
 	
 ******************************************************************************** 
 	
@@ -748,7 +748,7 @@ Delivery based on a late pregnancy reco |      1,973        0.16       83.03
 
 * Pulling variables out of HES
 
-	do "$Dodir\2_eligibility\2f_hes vars.do"
+	do "$Dodir\2_eligibility\1f_hes vars.do"
 	
 	use "$Datadir\derived_data\pregnancy_cohort_final.dta", clear
 	merge 1:1 patid pregid using "$Datadir\derived_data\pregreg_bw_gl.dta", nogen
