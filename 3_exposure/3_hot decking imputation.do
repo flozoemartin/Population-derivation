@@ -16,7 +16,7 @@
 
 * Start logging
 
-	log using "$Logdir\3_exposure\2_hot decking imputation.txt", replace
+	log using "$Logdir\3_exposure\3_hot decking imputation.txt", replace
 	
 ********************************************************************************
 
