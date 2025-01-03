@@ -16,7 +16,7 @@
 
 * Start logging
 
-	log using "$Logdir\3_exposure\1_cleaning ad prescriptions.txt", replace
+	log using "$Logdir\3_exposure\2_cleaning ad prescriptions.txt", replace
 	
 ********************************************************************************
 
