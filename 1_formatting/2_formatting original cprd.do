@@ -16,7 +16,7 @@
 
 * Start logging
 	
-	log using "$Logdir\1_formatting\2_formatting cprd.txt", replace
+	log using "$Logdir\1_formatting\2_formatting original cprd.txt", replace
 	
 ********************************************************************************
 
