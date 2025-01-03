@@ -17,7 +17,7 @@
 
 * Start logging
 
-	log using "$Logdir\5_indications\1_identifying depression & anxiety.txt", replace
+	log using "$Logdir\5_indications\1_identifying indications in cprd.txt", replace
 	
 ********************************************************************************
 	
