@@ -16,7 +16,7 @@
 
 * Start logging
 	
-	log using "$Logdir\1_converting text files to stata files.txt", replace
+	log using "$Logdir\1_formatting\1_converting text files to stata files.txt", replace
 	
 ********************************************************************************
 
